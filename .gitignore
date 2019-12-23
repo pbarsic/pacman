@@ -4,3 +4,4 @@ config.status
 .deps
 *.swp
 Makefile
+src/pacman
