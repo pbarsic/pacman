@@ -62,10 +62,10 @@ Ghost::Ghost(int init_x, int init_y, int init_intelligence,
 		ghost_2 = Screen::loadImage("gfx/clyde_2.png", 255);
 		idxCurrentRail = 90;
 	}
-	augen_0        = Screen::loadImage("gfx/augen_0.png", 0);
-	augen_1        = Screen::loadImage("gfx/augen_1.png", 0);
-	augen_2        = Screen::loadImage("gfx/augen_2.png", 0);
-	augen_3        = Screen::loadImage("gfx/augen_3.png", 0);
+	augen_0        = Screen::loadImage("gfx/augen_0.png", -1);
+	augen_1        = Screen::loadImage("gfx/augen_1.png", -1);
+	augen_2        = Screen::loadImage("gfx/augen_2.png", -1);
+	augen_3        = Screen::loadImage("gfx/augen_3.png", -1);
 	escape_1       = Screen::loadImage("gfx/escaping_ghost_1.png", 255);
 	escape_2       = Screen::loadImage("gfx/escaping_ghost_2.png", 255);
 	escape_white_1 = Screen::loadImage("gfx/escaping_ghost_white_1.png", 0);

@@ -192,6 +192,7 @@ SDL_Surface *Screen::loadImage(const char *filename, int transparentColor) {
 	if (transparentColor != -1)
 		SDL_SetColorKey(temp, SDL_TRUE | SDL_RLEACCEL, (Uint32)SDL_MapRGB(temp->format, (uint8_t)transparentColor, (uint8_t)transparentColor, (uint8_t)transparentColor));
 	surface = SDL_ConvertSurface(temp,  Screen::getInstance()->getSurface()->format, 0);
+    SDL_SetSurfaceBlendMode(surface, SDL_BLENDMODE_BLEND);
 	if (surface == NULL) {
 		std::cout << "Unable to convert image to display format: " << SDL_GetError() << std::endl;
 		exit(EXIT_FAILURE);
